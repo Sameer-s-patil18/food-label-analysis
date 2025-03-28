@@ -1,0 +1,14 @@
+{
+  "name": "food-label-analysis",
+  "version": "1.0.0",
+  "description": "Food Label Analysis Application",
+  "scripts": {
+    "install-all": "npm install && cd project && npm install",
+    "build": "cd project && npm run build",
+    "start": "cd project/server && node index.js",
+    "dev": "cd project && npm run dev"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+} 
