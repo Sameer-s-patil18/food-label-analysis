@@ -16,11 +16,17 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "project/server/index.js"
+      "dest": "/project/server/index.js"
     },
     {
       "src": "/(.*)",
-      "dest": "project/dist/$1"
+      "dest": "/project/dist/$1"
     }
-  ]
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "JWT_SECRET": "@jwt_secret",
+    "VITE_API_URL": "@vite_api_url",
+    "VITE_GEMINI_API_KEY": "@vite_gemini_api_key"
+  }
 } 
